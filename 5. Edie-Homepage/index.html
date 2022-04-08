@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Edie Homepage</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav__title">Edie</div>
+        <ul class="nav__list">
+          <li class="nav__list-item active">Home</li>
+          <li class="nav__list-item">Services</li>
+          <li class="nav__list-item">Our Works</li>
+          <li class="nav__list-item">Clients</li>
+          <li class="nav__list-item">Contact</li>
+        </ul>
+        <span 
+          id="hamburger-nav" 
+          class="material-icons nav__hamburger md-36"
+          onclick="modalOn()"
+        >
+          menu
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <section class="offset--lg separator">
+        <p class="question ">Unhappy with your website?</p>
+        <h1 class="page__title size--md">
+          We create beautiful and fast web services
+        </h1>
+      </section>
+
+      <img 
+          class="hero__header" 
+          src="images/heroImage.jpg" alt="hero image"
+      >
+
+      <section class="offset--lg">
+        <div class="intro size--md">
+          <h1>Story, emotion and purpose</h1>
+          <p class="light-grey">
+            We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
+          </p>
+          <p class="intro__question light-brown">Want us to contact you?</p>
+          <form class="join-form">
+            <input class="join-form__input" type="text" placeholder="Email">
+            <button class="join-form__submit">Join</button>
+          </form>
+        </div>
+      </section>
+
+      <div class="separator page-content">
+        <section class="services">
+          <h2 class="size--md">
+            We offer high demand services
+          </h2>
+
+          <div class="card__list">
+            <div class="card__item">
+              <span 
+                class="card__item-icons material-icons md-48 bg-blue align-vert">
+                edit
+              </span>
+              <h3>UI/UX Design</h3>
+              <p class="card__item-info">
+                Lorem ipsum dolor sit amet, argumentum honestatis ne ius, utroque urbanitas at ...
+              </p>
+              <button class="card__item-btn">Get started</button>
+            </div>
+
+            <div class="card__item">
+              <span 
+                class="card__item-icons material-icons md-48 bg-green">
+                code
+              </span>
+              <h3>Front End</h3>
+              <p class="card__item-info">
+                Lorem ipsum dolor sit amet, argumentum honestatis ne ius, utroque urbanitas at ...
+              </p>
+              <button class="card__item-btn">Get started</button>
+            </div>
+
+            <div class="card__item">
+              <span 
+                class="card__item-icons material-icons md-48 bg-red">
+                list
+              </span>
+              <h3>Back End</h3>
+              <p class="card__item-info">
+                Lorem ipsum dolor sit amet, argumentum honestatis ne ius, utroque urbanitas at ...
+              </p>
+              <button class="card__item-btn">Get started</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="separator">
+          <h2 class="size--md">
+            Good design means good business
+          </h2>
+
+          <div class="proj__list">
+            <div class="proj__item">
+              <img 
+                class="proj__item-img" 
+                src="images/smarthome.jpg"
+                alt="smart home"
+              >
+              <h5 class="no-margin">Full stack application</h5>
+              <h4 class="no-margin">Smart home dashboard</h4>
+            </div>
+            
+            <div class="proj__item">
+              <img 
+                class="proj__item-img" 
+                src="images/onboard.png"
+                alt="onboard"
+              >
+              <h5 class="no-margin">UI/UX design</h5>
+              <h4 class="no-margin">Onboard application</h4>
+            </div>
+            
+            <div class="proj__item">
+              <img 
+                class="proj__item-img" 
+                src="images/booking.png"
+                alt="booking"
+              >
+              <h5 class="no-margin">Mobile application</h5>
+              <h4 class="no-margin">Booking system</h4>
+            </div>
+
+            <div class="proj__item">
+              <img 
+                class="proj__item-img" 
+                src="images/juice-product.png"
+                alt="juice product"
+              >
+              <h5 class="no-margin">Front End application</h5>
+              <h4 class="no-margin">Juice product homepage</h4>
+            </div>
+          </div>
+              <a class="proj__read-more">
+                Read more
+                <span class="material-icons inline align-vert">
+                    east
+                </span>
+            </a>
+        </section>
+
+        <section class="separator team">
+          <div class="team__desc">
+            <p class="size--md red">Meet the team</p>
+            <h2 class="size--md no-margin">We are chilled and a laidback team</h2>
+            <p class="size--md light-grey">
+              Lorem ipsum dolor sit amet, argumentum honestatis ne ius, utroque urbanitas at pri.
+            </p>
+          </div>
+          <div class="team_imgs">
+            <img class="img1" src="images/person3.png">
+            <img class="img2" src="images/person1.png">
+            <img class="img3" src="images/person2.png">
+          </div>
+        </section>
+
+        <section class="testimonial separator">
+          <h2>
+            "Fast and outstanding results. Edie understands their customer's needs. They have a young and talented team."
+          </h2>
+          <div class="testimonial__user">
+            <img class="testimonial__user-img" src="images/person4.png">
+            <div class="testimonial__user-info">
+              <h6 class="no-margin">Carlos Tran</h6>
+              <p class="light-brown bold--md">The Decorate Gatsby</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="separator page-content">
+      <div class="info">
+        <div class="info__link">
+          <a>Home</a>
+          <a>Services</a>
+          <a>Our Works</a>
+          <a>Clients</a>
+          <a>Contact</a>
+        </div>
+        <div class="info__social">
+          <p class="info__social__title no-margin">Edie</p>
+          <div class="info__social__icon-list">
+            <embed src="icons/instagram.svg" />
+            <embed src="icons/linkedin.svg" />
+            <embed src="icons/twitter.svg" />
+          </div>
+        </div>
+        <div class="info__contact">
+          <form class="join-form">
+            <p class="join-form__text">Want us to contact you?</p>
+            <input class="join-form__input" type="text" placeholder="Email">
+            <button class="join-form__submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="copyright"></div>
+    </footer>
+
+    <div id="modal" class="modal">
+      <div class="modal__close-container">
+        <span 
+          onclick="modalOff()"
+          class="material-icons md-48 modal__close hover-enlarge"
+        >
+          close
+        </span>
+      </div>
+      <ul class="modal__list">
+        <li class="nav__list-item active hover-enlarge">Home</li>
+        <li class="nav__list-item hover-enlarge">Services</li>
+        <li class="nav__list-item hover-enlarge">Our Works</li>
+        <li class="nav__list-item hover-enlarge">Clients</li>
+        <li class="nav__list-item hover-enlarge">Contact</li>
+      </ul>
+    </div>
+
+    <script>
+      let modal = document.getElementById("modal")
+      window.onresize = reportWindowSize;
+
+      function modalOn() {
+        modal.style.display = "flex"
+        modal.style.opacity = "1"
+      }
+
+      function modalOff() {
+        modal.classList.add("modal-close");
+
+        setTimeout(function(){
+        	modal.classList.remove('modal-close');
+          modal.style.display = "none";
+        }, 450);
+      }
+
+      function reportWindowSize() {
+        if (window.innerWidth > 1000) {
+          modal.style.display = "none"
+        }
+      }
+    </script>
+  </body>
+</html>

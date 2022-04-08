@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link
+      href="index.css"
+      rel="stylesheet"
+    />
+
+    <link 
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Checkout</h1>
+    </header>
+    <main>
+      <div class="form-container">
+        <div class="form-section">
+          <h3>Contact information</h3>
+          <form>
+            <div class="input">
+              <label for="email">
+                E-mail
+                <span class="error-label" id ="email_error"></span>
+              </label>
+              <span class="material-icons">mail</span>
+              <input type="text" id="email" name="email" placeholder="Enter your email..."/>  
+            </div>
+
+            <div class="input">
+              <label for="phone">
+                Phone
+                <span class="error-label" id ="phone_error"></span>
+              </label>
+              <span class="material-icons">phone</span>
+              <input type="text" id="phone" name="phone" placeholder="Enter your phone..."/>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-section">
+          <h3>Shipping address</h3>
+          <form class="form">
+            <div class="input">
+              <label for="full_name">Full name 
+                <span class="error-label" id ="fullname_error"></span>
+              </label> 
+              <span class="material-icons">account_circle</span>
+              <input type="text" id="full_name" name="full_name" placeholder="Enter your full name..."/>
+            </div>
+
+            <div class="input">
+              <label for="address">
+                Address
+                <span class="error-label" id ="address_error"></span>
+              </label>
+              <span class="material-icons">home</span>
+              <input type="text" id="address" name="address" placeholder="Enter your address..."/>
+            </div>
+
+            <div class="input">
+              <label for="city">
+                City
+                <span class="error-label" id ="city_error"></span>
+              </label>
+              <span class="material-icons">location_city</span>
+              <input type="text" id="city" name="city" placeholder="Enter your city..."/>
+            </div>
+  
+            <div class="split-two">
+              <div class="input">
+                <label for="country">
+                  Country
+                  <span class="error-label" id ="country_error"></span>
+                </label>
+                <span class="material-icons">public</span>
+                  <select name="country" id="country">
+                    <option disabled selected>Select your country...</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="United States">United States</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Malaysia">Malaysia</option>
+                  </select>
+              </div>
+
+              <div class="input">
+                <label for="postal_code">
+                  Postal code
+                  <span class="error-label" id ="postal_error"></span>
+                </label>
+                <span class="material-icons">markunread_mailbox</span>
+                <input type="text" id="postal_code" name="postal_code" placeholder="Enter your postal code..."/>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-section">
+          <form>
+            <div class="input checkbox-container">
+              <input class="checkbox" type="checkbox" id="save" name="save"/>
+              <label id="checkbox-label" for="save"> Save this information for next time</label>
+            </div>
+          </form>
+        </div>
+
+        <div class="submit-button">
+          <button id="submit">Continue</button>
+        </div>
+      </div>
+
+      <div class="product-container">
+        <div class="products">
+          <div class="product">
+            <img src="images/photo1.png">
+            <div>
+              <p class="product-name">Vintage Backbag</p>
+              <p class="price discounted">$54.99</p>
+              <p class="price original">$94.99</p>
+              <div class="product-number">
+                <button id="deduct-Vintage Backbag">-</button>
+                <span id="count-Vintage Backbag">1</span>
+                <button id="add-Vintage Backbag">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="images/photo2.png">
+            <div>
+              <p class="product-name">Levi Shoes</p>
+              <p class="price discounted">$74.99</p>
+              <p class="price original">$124.99</p>
+              <div class="product-number">
+                <button id="deduct-Levi Shoes">-</button>
+                <span id="count-Levi Shoes">1</span>
+                <button id="add-Levi Shoes">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-container">
+          <div class="price-breakdown">
+            <p class="breakdown">Shipping</p>
+            <p class="breakdown small">$19</p>
+          </div>
+          <div class="price-breakdown">
+            <p class="breakdown">Total</p>
+            <p id="total-price" class="breakdown small">$148.98</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      created by NganJason - devChallenges.io
+    </footer>
+
+    <div class="overlay">
+      <div class="alert">
+        <span id="overlay-close" class="material-icons md-24 exit">close</span>
+        <span id="alert-icon" class="material-icons md-60">dangerous</span>
+        <p id="submit-msg">Success!</p>
+      </div>
+    </div>
+
+    <script type="module"  src="js/form/form.js"></script>
+    <script type="module"  src="js/productInfo/productInfo.js"></script>
+    <script>
+      let closeBtn = document.getElementById("overlay-close");
+      closeBtn.addEventListener("click", onOverlayClose);
+
+      function onOverlayClose() {
+        let overlay = document.getElementsByClassName("overlay")[0];
+        overlay.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

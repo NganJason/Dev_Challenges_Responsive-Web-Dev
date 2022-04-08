@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/6a350c0758.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>Interior Consultant</title>
+  </head>
+  <body>
+    <header>
+      <div class="left-nav">
+        <span>This Interior</span>
+      </div>
+      <div class="right-nav nav-btns">
+        <button class="active-btn">Home</button>
+        <button>Collection</button>
+        <button>About</button>
+        <button>Contact</button>
+      </div>
+      <div class="nav-btns">
+        <button 
+          onClick="on()" 
+          class="hamburger-menu"
+        >
+          <span class="material-icons md-36">
+            menu
+          </span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="info-container">
+        <h1 class="title">Modern interior</h1>
+        <p class="subtitle">
+          A full-Service residential & <br>
+          commercial interior design and <br>
+          staging company offering <br>
+          professional organizing & <br>
+          eco-services. <br>
+        </p>
+        <div class="read-more">
+          Read more       
+          <span class="material-icons">east</span>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="images/photo1.png"/>
+        <div class="profile-container">
+          <div class="user-profile">
+            <img class="profile-img" src="images/photo2.png"/>
+              <p class="user-name">Aliza Webber</p>
+              <p class="user-role grey">Interior designer</p>
+          </div>
+            <p class="profile-desc">Designed in 2020 by Aliza Webber</p>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      created by NganJason - devChallenges.io
+    </footer>
+    <div id="overlay">
+      <div class="modal-close">
+        <span onclick="off()" class="material-icons md-48">close</span>
+      </div>
+      <div class="modal nav-btns">
+        <button class="active-btn">Home</button>
+        <button>Collection</button>
+        <button>About</button>
+        <button>Contact</button>
+      </div>        
+    </div>
+
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "flex";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+  </script>
+  </body>
+  
+</html>

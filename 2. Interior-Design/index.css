@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@700,500&family=Montserrat:wght@700,500,400&display=swap');
+
+body {
+    margin: auto;
+    width: 1440px;
+    background-color: #181719;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10rem;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav {
+    width: 102px;
+    height: 32px;
+    border: 1px solid #FFFFFF;
+
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-btns > button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;    
+    color: #FFFFFF;
+    cursor: pointer;
+
+    margin: 0rem 2rem;
+}
+
+.nav-btns > .active-btn {
+    border-bottom: 1px solid #FFFFFF;
+    font-weight: 700;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Body */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.info-container {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.read-more {
+    margin-top: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-container {   
+    position: relative;
+}
+
+img {
+    width: 821px;
+}
+
+.profile-container {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    width: 410px;
+    height: 180px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.profile-img {
+    width: 85px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    margin-top: 15rem;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+#overlay {
+    display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+    body {
+        width: 90vw;
+        padding: 2rem 0;
+        margin: auto;
+    }
+
+    main {
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .img-container {
+        margin: auto;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .profile-container {
+        width: 60%;
+        left: 25%;
+    }
+
+    /* Overlay */
+    #overlay {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width:100%;
+        z-index: 2;
+        position: fixed;    
+        background-color: #181719;
+
+        display: none;
+        flex-direction: column;   
+    }
+
+    .modal {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .modal-close {
+        padding: 2.5rem 4rem;
+        text-align: end;
+    }
+
+    .modal > button {
+        margin: 2rem auto;
+        width: 15%;
+    }
+}
+
+/* Text */
+.left-nav {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.nav-btns > button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.title {
+    width: 365px;
+    height: 61px;
+
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+}
+
+.subtitle {
+    width: 410px;
+    height: 145px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.read-more {
+    width: 130px;
+    height: 40px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.user-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.user-role {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+.profile-desc {
+    width: 287px;
+    height: 62px;
+
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* Icons */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }

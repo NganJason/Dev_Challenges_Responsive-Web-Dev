@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+    overflow: auto;
+    
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 0;
+}
+
+/* Header */
+header {
+    margin: 1rem 0rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main */
+main {
+    display: flex;
+}
+
+/* Form container */
+.form-container {
+    width: 45%;
+}
+
+.form-section:nth-child(2n) {
+    margin-top: 3rem;
+}
+
+.input {
+    position: relative;
+    color: #828282; 
+}
+
+.input label {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.input input, select {
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 56px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+.input .material-icons {
+    position: absolute;
+    left: 0;
+    top: 2.3rem;
+    left: 1rem;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.split-two {
+    display: flex;
+    justify-content: space-between
+}
+
+.split-two .input {
+    width: 48%;
+}
+
+.split-two .input .material-icons {
+    top: 3.8rem;
+}
+
+.checkbox-container {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.checkbox-container .checkbox {
+    width: 20px;
+    height: 20px;
+    margin: auto 10px auto 0px;
+    cursor: pointer;
+}
+
+#checkbox-label {    
+    margin: auto 0;
+}
+
+.submit-button {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-button button {
+    width: 166px;
+    height: 54px;
+    background: #F2994A;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Product container */
+.product-container {
+    width: 383px;
+    height: 535px;
+    background: #F2F2F2;
+    border-radius: 12px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.products {
+    flex: 4;
+}
+
+.product {
+    display: flex;
+    padding: 1.5rem 0 1rem 1.5rem;
+}
+
+.product > img {
+    width: 134px;
+    height: 136px;
+    border-radius: 13px;
+    transform: rotate(-0.02deg);
+
+    margin-right: 1.2rem;
+}
+
+.price {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.product-number {
+    width: 122px;
+    height: 52px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-number button {
+    width: 21px;
+    height: 21px;
+    background: #E0E0E0;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-container {
+    flex: 1;
+}
+
+.price-breakdown {
+    border-top: 1px solid #BDBDBD;
+    width: 80%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    margin: 4rem auto 1rem auto;
+}
+
+/* Errors */
+.error-label {
+    color: #FD5D5D;
+    display: none;
+}
+
+.error-input {
+    border-color: red !important;
+}
+
+/* Overlay */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: 8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(44, 51, 51, 0.7);
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success {
+    color: green;
+}
+
+.failed {
+    color: #E83A14;
+}
+
+.alert .exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.8rem;
+    color: #7882A4;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1080px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .form-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .product-container {
+        width: 90%;
+        margin: 2rem auto;
+    }
+}
+
+/* Font */
+header h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #4E5150;
+    transform: rotate(-0.02deg);
+}
+
+.form-section h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    transform: rotate(-0.02deg);
+}
+
+.input label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+    transform: rotate(-0.02deg);
+}
+
+.input input, select {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282; 
+}
+
+.submit-button button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4E5150;
+    transform: rotate(-0.02deg);
+}
+
+.price {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    transform: rotate(-0.02deg);
+}
+
+.discounted {
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2994A;
+}
+
+.original {
+    text-decoration-line: line-through;
+    color: #4E5150;
+}
+
+.product-number span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.product-number button {
+    font-size: 20px;
+    text-align: center;
+    color: #828282;
+}
+
+.breakdown {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.small {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+footer {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    color: #BDBDBD;
+}
+
+.alert {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 17px;
+    text-align: center;
+    color: #203239;
+}
+
+/* Icons */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-60 { font-size: 60px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
