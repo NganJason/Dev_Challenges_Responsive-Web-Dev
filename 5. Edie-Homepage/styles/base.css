@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@500;400;100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@500;400;300;100&display=swap');
 
 * {
     width: 100%;
@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 1000px) {
   :root {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -32,6 +32,15 @@ p {
 }
 
 button {
+    border: none;
+    
     cursor: pointer
 }
 
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
