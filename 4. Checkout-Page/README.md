@@ -4,7 +4,7 @@
 * CSS
 
 ### Demo
-* [Demo Link](https://nganjason.github.io/Checkout-Page/)
+* [Demo Link](https://jason-ngan-checkout-page.netlify.app/)
 
 ### Desktop View
 ![Desktop View](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/4.%20Checkout-Page/demo/desktop__view.png)

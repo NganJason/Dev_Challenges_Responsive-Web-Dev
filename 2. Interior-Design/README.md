@@ -4,7 +4,7 @@
 * CSS
 
 ### Demo
-* [Demo Link](https://nganjason.github.io/My-Team-Page/)
+* [Demo Link](https://jason-ngan-interior-design.netlify.app/)
 
 ### Desktop View
 ![Desktop View](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/2.%20Interior-Design/demo/desktop_view.png)
