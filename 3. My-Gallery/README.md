@@ -4,7 +4,7 @@
 * CSS
 
 ### Demo
-* [Demo Link](https://nganjason.github.io/My-Gallery/)
+* [Demo Link](https://jason-ngan-my-gallery.netlify.app/)
 
 ### Desktop View
 ![Desktop View](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/3.%20My-Gallery/demo/desktop__view.png)
