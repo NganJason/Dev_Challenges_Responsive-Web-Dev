@@ -1,0 +1,9 @@
+.nav__list > a.active {
+    font-weight: 600;
+    color: #3A3845;    
+}
+
+.modal__list > a.active {
+    font-weight: 600;
+    color: #3A3845;    
+}
