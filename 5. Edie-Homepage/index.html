@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/modules.css">
-    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/state.css">
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Edie Homepage</title>
   </head>
   <body>
       <header>
           <nav class="nav">
-            <div class="nav__title">
+            <div class="nav__title ft-header-bold-lg">
                 Edie
             </div>
             <div class="nav__list">
-                <a>Home</a>
+                <a class="active">Home</a>
                 <a>Services</a>
                 <a>Our Works</a>
                 <a>Clients</a>
                 <a>Contact</a>
             </div>
+            <span 
+              class="material-icons nav__hamburger md-48"
+              onclick="modalOn()"
+            >
+              menu
+            </span>
           </nav>
       </header>
       <main>
@@ -57,7 +64,7 @@
               </p>
               <form>
                 <input class="join-form__input mg-top-sm" type="text" placeholder="Email">
-                <button class="gen__button join-form__button">Join</button>
+                <button class="join-form__button">Join</button>
               </form>
             </div>
           </div>
@@ -71,10 +78,13 @@
 
             <div class="card__list mg-top-lg">
               <div class="card__item">
-                <span 
-                  class="material-icons md-48 bg-blue">
-                  edit
-                </span>
+                <div class="card__icon bg-blue">
+                  <span 
+                    class="material-icons md-48">
+                    edit
+                  </span>
+                </div>
+                
                 <h2 class="card__item-title">
                   UI/UX Design
                 </h2>
@@ -86,10 +96,12 @@
                 </button>
               </div>
               <div class="card__item">
-                <span 
-                  class="card__item-icons material-icons md-48 bg-green">
-                  code
-                </span>
+                <div class="card__icon bg-green">
+                  <span 
+                    class="material-icons md-48">
+                    code
+                  </span>
+                </div>
                 <h2 class="card__item-title">
                   Front End
                 </h2>
@@ -101,10 +113,12 @@
                 </button>
               </div>
               <div class="card__item">
-                <span 
-                  class="card__item-icons material-icons md-48 bg-red">
-                  list
-                </span>
+                <div class="card__icon bg-red">
+                  <span 
+                    class="material-icons md-48">
+                    list
+                  </span>
+                </div>
                 <h2 class="card__item-title">
                   Back End
                 </h2>
@@ -190,16 +204,78 @@
         </div>
       </main>
       <footer class="mg-top-xlg">
-        <div class="footer__links">
-          <a>Home</a>
+        <div class="footer-content">
+          <div class="footer-links">
+            <a>Home</a>
+            <a>Services</a>
+            <a>Our Works</a>
+            <a>Clients</a>
+            <a>Contact</a>
+          </div>
+
+          <div class="footer-social">
+            <h1 class="ft-header-bold-lg">Edie</h1>
+            <div class="footer-social__icons">
+              <img src="icons/instagram.svg" />
+              <img src="icons/linkedin.svg" />
+              <img src="icons/twitter.svg" />
+            </div>
+          </div>
+
+          <div>
+            <div class="footer-form">
+              <p class="join-form__label">
+                Want us to contact you?
+              </p>
+              <form>
+                <input class="join-form__input mg-top-sm" type="text" placeholder="Email">
+                <button class="join-form__button">Join</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <h4 class="copyright">created by NganJason - devChallenges.io</h4>
+      </footer>
+
+      <div id="modal" class="modal">
+        <span 
+          onclick="modalOff()"
+          class="material-icons md-48 modal__close"
+        >
+          close
+        </span>
+        <div class="modal__list">
+          <a class="active">Home</a>
           <a>Services</a>
           <a>Our Works</a>
           <a>Clients</a>
           <a>Contact</a>
         </div>
-        <div class="footer__social"></div>
-        <div class="footer__form"></div>
-      </footer>
-    
+      </div>
+  
+    <script>
+      let modal = document.getElementById("modal")
+      window.onresize = reportWindowSize;
+
+
+      function modalOn() {
+        modal.style.display = "flex"
+      }
+
+      function modalOff() {
+        modal.classList.add("modal-close");
+
+        setTimeout(function(){
+        	modal.classList.remove('modal-close');
+          modal.style.display = "none";
+        }, 450);
+      }
+
+      function reportWindowSize() {
+        if (window.innerWidth > 1000) {
+          modal.style.display = "none"
+        }
+      }
+    </script>
   </body>
 </html>

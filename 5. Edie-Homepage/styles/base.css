@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@500;400;300;100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500&family=Poppins:wght@100;300;400;500;600&display=swap');
 
 * {
     width: 100%;
@@ -22,7 +22,14 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
 a {
+    font-size: 1rem;
     cursor: pointer
 }
 
