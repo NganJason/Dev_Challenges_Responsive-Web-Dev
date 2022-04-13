@@ -5,16 +5,11 @@
 * JavaScript
 
 ### Demo
-* [Demo Link](https://jason-edie-homepage.netlify.app/)
+* [Demo Link](https://jason-ngan-edie-homepage.netlify.app/)
 
 ### Desktop View
-![Desktop View](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/4.%20Checkout-Page/demo/desktop__view.png)
+![Desktop View](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/5.%20Edie-Homepage/demo/desktop_view.png)
 
-### Desktop View -- Validation Fail
-![Desktop View -- Validation Fail](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/4.%20Checkout-Page/demo/validation__fail.png)
-
-### Desktop View -- Validation Succeed
-![Desktop View -- Validation Succeed](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/4.%20Checkout-Page/demo/validation__succeed.png)
 
 ### Mobile View
-![Mobile View](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/4.%20Checkout-Page/demo/mobile__view.png)
+![Mobile View](https://github.com/NganJason/Dev_Challenges_Responsive-Web-Dev/blob/master/5.%20Edie-Homepage/demo/mobile_view.png)
