@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+
+html,
+body {
+    width: 100vw;
+    max-width: 1500px; /* Prevent screen from getting too wide */
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: black;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.page {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    flex: 1;
+    max-height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav h1 {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.content {
+    flex: 10;
+    width: 100%;
+
+    display: flex;
+    gap: 2rem;
+}
+
+.img-container {
+    width: 60%;
+    max-width: 800px;
+
+    display: flex;
+    align-items: center;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-container h1 {
+    max-width: 90%;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 4rem;
+    color: #333333;
+}
+
+.info-container h3 {
+    max-width: 90%;
+
+    font-family: 'Space Mono';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 36px;
+    color: #4F4F4F;
+}
+
+.info-container button {
+    width: 216px;
+    height: 68px;
+    margin-bottom: 2rem;
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    background-color: #333333;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer {
+    flex: 1;
+    max-height: 80px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    width: 287px;
+    height: 17px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container {
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
